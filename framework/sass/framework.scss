@@ -1,0 +1,170 @@
+// Global
+
+html {
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  color: #555;
+}
+
+// Fonts
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i');
+
+// Variables
+
+$article-title-font: 'Noto Sans', sans-serif;
+$title-font: 'Noto Sans', sans-serif;
+$content-font: 'Noto Serif', serif;
+
+$article-title-font-size: 32px;
+$title-font-size: 28px;
+$content-font-size: 18px;
+
+$article-title-line-height: 1.04;
+$title-line-height: 1.15;
+$content-line-height: 1.58;
+
+// Responsiveness
+
+@media only screen and (max-width: 480px)  {
+  .container {
+    width: 100%;
+    padding: 0 5px;
+  }
+  .row {
+    flex-direction: column;
+  }
+
+}
+@media only screen and (min-width: 720px)  {
+  .container {
+    width: 90%;
+    padding: 0 7px;
+  }
+  .row {
+    flex-direction: row;
+  }
+
+}
+@media only screen and (min-width: 960px)  {
+  .container {
+    width: 80%;
+    padding: 0 10px;
+  }
+  .row {
+    flex-direction: row;
+  }
+}
+
+// Elements
+
+.article-title {
+  display: block;
+  font-family: $article-title-font;
+  font-size: $article-title-font-size;
+  line-height: $article-title-line-height;
+}
+
+.title {
+  font-family: $title-font;
+  font-size: $title-font-size;
+  line-height: $title-line-height;
+}
+
+.content {
+  font-family: $content-font;
+  font-size: $content-font-size;
+  line-height: $content-line-height;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+// Positioning
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.valign {
+  display: flex;
+  align-items: center;
+}
+
+.halign {
+  display: flex;
+  justify-content: center;
+}
+
+.start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.text-center {
+  text-align: center;
+}
+
+// Containers and wrappers
+
+.container {
+  margin: 0 auto;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+}
+
+// Grid system
+
+@media only screen and (max-width: 480px) {
+  $columns: 12;
+  $column-width: 100 / $columns;
+
+  @while $columns > 0 {
+      .mob-#{$columns} {
+          width: $column-width * $columns + %;
+      }
+
+      $columns: $columns - 1;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  $columns: 12;
+  $column-width: 100 / $columns;
+
+  @while $columns > 0 {
+      .tab-#{$columns} {
+          width: $column-width * $columns + %;
+          padding: 0 7px;
+      }
+
+      $columns: $columns - 1;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  $columns: 12;
+  $column-width: 100 / $columns;
+
+  @while $columns > 0 {
+      .lap-#{$columns} {
+          width: $column-width * $columns + %;
+          padding: 0 10px;
+      }
+
+      $columns: $columns - 1;
+  }
+}

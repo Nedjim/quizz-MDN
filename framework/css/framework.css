@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i");
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body {
+  color: #555; }
+
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 0 5px; }
+  .row {
+    flex-direction: column; } }
+
+@media only screen and (min-width: 720px) {
+  .container {
+    width: 90%;
+    padding: 0 7px; }
+  .row {
+    flex-direction: row; } }
+
+@media only screen and (min-width: 960px) {
+  .container {
+    width: 80%;
+    padding: 0 10px; }
+  .row {
+    flex-direction: row; } }
+
+.article-title {
+  display: block;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 32px;
+  line-height: 1.04; }
+
+.title {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 28px;
+  line-height: 1.15; }
+
+.content {
+  font-family: "Noto Serif", serif;
+  font-size: 18px;
+  line-height: 1.58;
+  word-break: break-word;
+  word-wrap: break-word; }
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.valign {
+  display: flex;
+  align-items: center; }
+
+.halign {
+  display: flex;
+  justify-content: center; }
+
+.start {
+  display: flex;
+  justify-content: flex-start; }
+
+.end {
+  display: flex;
+  justify-content: flex-end; }
+
+.text-center {
+  text-align: center; }
+
+.container {
+  margin: 0 auto; }
+
+.row {
+  width: 100%;
+  display: flex; }
+
+@media only screen and (max-width: 480px) {
+  .mob-12 {
+    width: 100%; }
+  .mob-11 {
+    width: 91.66667%; }
+  .mob-10 {
+    width: 83.33333%; }
+  .mob-9 {
+    width: 75%; }
+  .mob-8 {
+    width: 66.66667%; }
+  .mob-7 {
+    width: 58.33333%; }
+  .mob-6 {
+    width: 50%; }
+  .mob-5 {
+    width: 41.66667%; }
+  .mob-4 {
+    width: 33.33333%; }
+  .mob-3 {
+    width: 25%; }
+  .mob-2 {
+    width: 16.66667%; }
+  .mob-1 {
+    width: 8.33333%; } }
+
+@media only screen and (min-width: 720px) {
+  .tab-12 {
+    width: 100%;
+    padding: 0 7px; }
+  .tab-11 {
+    width: 91.66667%;
+    padding: 0 7px; }
+  .tab-10 {
+    width: 83.33333%;
+    padding: 0 7px; }
+  .tab-9 {
+    width: 75%;
+    padding: 0 7px; }
+  .tab-8 {
+    width: 66.66667%;
+    padding: 0 7px; }
+  .tab-7 {
+    width: 58.33333%;
+    padding: 0 7px; }
+  .tab-6 {
+    width: 50%;
+    padding: 0 7px; }
+  .tab-5 {
+    width: 41.66667%;
+    padding: 0 7px; }
+  .tab-4 {
+    width: 33.33333%;
+    padding: 0 7px; }
+  .tab-3 {
+    width: 25%;
+    padding: 0 7px; }
+  .tab-2 {
+    width: 16.66667%;
+    padding: 0 7px; }
+  .tab-1 {
+    width: 8.33333%;
+    padding: 0 7px; } }
+
+@media only screen and (min-width: 960px) {
+  .lap-12 {
+    width: 100%;
+    padding: 0 10px; }
+  .lap-11 {
+    width: 91.66667%;
+    padding: 0 10px; }
+  .lap-10 {
+    width: 83.33333%;
+    padding: 0 10px; }
+  .lap-9 {
+    width: 75%;
+    padding: 0 10px; }
+  .lap-8 {
+    width: 66.66667%;
+    padding: 0 10px; }
+  .lap-7 {
+    width: 58.33333%;
+    padding: 0 10px; }
+  .lap-6 {
+    width: 50%;
+    padding: 0 10px; }
+  .lap-5 {
+    width: 41.66667%;
+    padding: 0 10px; }
+  .lap-4 {
+    width: 33.33333%;
+    padding: 0 10px; }
+  .lap-3 {
+    width: 25%;
+    padding: 0 10px; }
+  .lap-2 {
+    width: 16.66667%;
+    padding: 0 10px; }
+  .lap-1 {
+    width: 8.33333%;
+    padding: 0 10px; } }
