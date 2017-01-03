@@ -1,34 +1,49 @@
-
-
 /*Containers and wrappers*/
 
 .main {
-  height: 100vh;
-  width: 100%;
+    height: 100vh;
+    width: 100%;
 }
+
 
 /*Positioning*/
 
 .column {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .button-row {
-  margin-top: 50px;
+    margin-top: 50px;
 }
+
 
 /*Components*/
 
 .button {
-  border-radius: 2px;
-  border: 1px solid #555;
-  padding: 10px;
-  width: 100px;
+    border-radius: 2px;
+    border: 1px solid #555;
+    padding: 10px;
+    width: 100px;
 }
+
 
 /*Elements*/
 
 .content {
-  font-family: 'Noto sans', sans-serif;
+    font-family: 'Noto sans', sans-serif;
+}
+
+.gallery {
+    overflow: hidden;
+}
+
+.gallery .movable {
+    display: flex;
+    transition: transform 0.4s;
+}
+
+.gallery .movable>div {
+    flex: 1;
+    min-width: 100%;
 }
