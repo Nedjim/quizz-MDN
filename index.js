@@ -18,6 +18,9 @@ $(function() {
         }
 
         function anim() {
+            var a=--C;
+            var b=3%7;
+            ++C;
             C = ($(this).is(".prev") ? --C : ++C) < 0 ? N - 1 : C % N;
             $movable.css({
                 transform: "translateX(-" + (C * 100) + "%)"
@@ -25,9 +28,21 @@ $(function() {
         }
 
         $(".prev, .next", this).on("click", anim);
-        // $gal.hover(stop, play);
-        // play();
 
+        $(".next").click(function(){
+            index++;
+            if(tab[index]){
+                $(".choix").bind();
+
+            }
+            else {
+                init($(".reponse"));
+            }
+        });
+
+        $(".prev").click(function(){
+            index--;
+        });
     });
 
 });

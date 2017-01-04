@@ -1,3 +1,7 @@
+html {
+    font-size: 16px;
+}
+
 /*Containers and wrappers*/
 
 .main {
@@ -46,4 +50,16 @@
 .gallery .movable>div {
     flex: 1;
     min-width: 100%;
+}
+
+
+.choix:hover {
+    background: #212121;
+    color: white;
+    border-radius: 0.2rem;
+}
+
+.choix {
+    color: grey;
+    padding: 0.5rem;
 }
